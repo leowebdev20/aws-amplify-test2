@@ -1,0 +1,11 @@
+<div style="text-align: center">
+  <button (click)="createTodo()">Create Todo</button>
+  <button (click)="listTodos()">Get Todos</button>
+
+  <div *ngFor="let todo of allTodos">
+    <hr />
+    <p>Title: {{ todo.name }}</p>
+    <p>Body: {{ todo.body }}</p>
+    <p>{{todo.completed ? "Completed" : "Pending"}}</p>
+  </div>
+</div>
