@@ -2,7 +2,9 @@
 <amplify-authenticator *ngIf="authState !== 'signedin'"></amplify-authenticator>
 
 <div *ngIf="authState === 'signedin' && user" class="App">
-    <amplify-sign-out></amplify-sign-out>
-    <div>Hello, {{user.username}}</div>
-    <!-- This is where you application template code goes -->
+  <amplify-sign-out></amplify-sign-out>
+  <div>Hello Mr. {{ user.username }}</div>
+  <!-- <a [routerLink]="['/todo']"> link to user component </a> -->
+  <a href="/todo"> link to user component </a>
+  <!-- This is where you application template code goes -->
 </div>
