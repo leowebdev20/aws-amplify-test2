@@ -3,9 +3,9 @@
 
 <div *ngIf="authState === 'signedin' && user" class="App">
   <amplify-sign-out></amplify-sign-out>
-  <div>Hello Mr. {{ user.username }}</div>
+  <div class="hello">Hello Mr. {{ user.username }}</div>
   <!-- <a [routerLink]="['/todo']">Todo Page</a> -->
-  <button (click)="gotoTodo()">Todo Page</button>
+  <button class="btn" (click)="gotoTodo()">Todo Page</button>
   <!-- <a href="/todo">Todo Page</a> -->
   <!-- This is where you application template code goes -->
 </div>

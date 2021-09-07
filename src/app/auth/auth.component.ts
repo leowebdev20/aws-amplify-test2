@@ -27,10 +27,11 @@ export class AuthComponent {
   }
 
   gotoTodo() {
-    this.router.navigate(['/todo']).then(() => {
-      // window.location.reload();
-      window.location.href = window.location.protocol + '//' + window.location.host + '/todo';
-    });
+    // this.router.navigate(['/todo']).then(() => {
+    //   // window.location.reload();
+    //   window.location.href = window.location.protocol + '//' + window.location.host + '/todo';
+    // });
+    this.router.navigate(['/todo']);
   }
 
   ngOnDestroy() {
