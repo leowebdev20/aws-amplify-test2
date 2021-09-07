@@ -1,5 +1,5 @@
 <!-- <amplify-authenticator></amplify-authenticator> -->
-<amplify-authenticator *ngIf="authState !== 'signedin'"></amplify-authenticator>
+<amplify-authenticator *ngIf="authState !== 'signedin'" theme={false} hideDefault={true}></amplify-authenticator>
 
 <div *ngIf="authState === 'signedin' && user" class="App">
   <amplify-sign-out></amplify-sign-out>

@@ -1,1 +1,19 @@
-@import '~aws-amplify-angular/theme.css';
+:root {
+  --amplify-primary-color: #ff6347;
+  --amplify-primary-tint: #ff7359;
+  --amplify-primary-shade: #e0573e;
+}
+// @import '~aws-amplify-angular/theme.css';
+amplify-form-section > form > amplify-section > section > div:nth-child(4) > div > slot > div > slot > amplify-button > button {
+  background-color: red !important;
+}
+
+* {
+  // font-size: --amplify-text-xxl !important;
+  background-color: rgb(92, 111, 187);
+  // color: --amplify-secondary-color;
+}
+
+amplify-sign-in {
+
+}
